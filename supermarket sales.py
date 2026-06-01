@@ -429,7 +429,11 @@ else:
 
     top_products["Total"] = top_products["Total"].round(2)
 
-    st.dataframe(top_products, use_container_width=True)
+    st.dataframe(
+    top_products,
+    use_container_width=True,
+    hide_index=True
+)
 
     col1, col2 = st.columns(2)
 
